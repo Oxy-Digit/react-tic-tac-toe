@@ -1,0 +1,56 @@
+img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: rgb(14, 38, 61);
+}
+
+.square {
+  background: rgb(255, 255, 255);
+  border: 1px solid #999;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 100px;
+}
+
+.status {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color:rgb(204, 150, 176);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.restart-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 25px;
+  background-color: rgb(255, 212, 233);
+}
+
+.restart-button:hover {
+  background-color: rgb(255, 0, 195);
+}
+
+.board {
+  margin: auto;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  width: 300px;
+}
