@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Game from './Game';
+import ReactDOM from 'react-dom';
+import Game from './pages/Game';
+import { Provider } from 'react-redux';
+import { store } from './toolkit/store'
 
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
+  <Provider store={store}>
     <Game />
-  </React.StrictMode>
+  </Provider>
+  </React.StrictMode>,
+    
+  document.getElementById('root')
 );
-
